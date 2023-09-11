@@ -51,7 +51,7 @@ MySQL-connector-python` library (install using `pip install mysql-connector-pyth
    ```sql
    CREATE TABLE products (
        id INT AUTO_INCREMENT PRIMARY KEY,
-       name VARCHAR(255) NOT NULL,
+       #name VARCHAR(255) NOT NULL,
        initial_quantity INT NOT NULL,
        current_quantity INT NOT NULL
    );

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Inventory Management</title>
+</head>
+<body>
+    <h1>Supermarket Inventory Management</h1>
+    
+    <div>
+        <h2>Add Product</h2>
+        <form id="addProductForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required><br>
+            <label for="initialQuantity">Initial Quantity:</label>
+            <input type="number" id="initialQuantity" required><br>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Sell Product</h2>
+        <form id="sellProductForm">
+            <label for="productId">Product ID:</label>
+            <input type="number" id="productId" required><br>
+            <label for="sellQuantity">Sell Quantity:</label>
+            <input type="number" id="sellQuantity" required><br>
+            <button type="submit">Sell Product</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Reorder Product</h2>
+        <form id="reorderProductForm">
+            <label for="reorderProductId">Product ID:</label>
+            <input type="number" id="reorderProductId" required><br>
+            <button type="submit">Reorder Product</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Product Availability</h2>
+        <form id="checkAvailabilityForm">
+            <label for="checkProductId">Product ID:</label>
+            <input type="number" id="checkProductId" required><br>
+            <button type="submit">Check Availability</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Feedback</h2>
+        <p id="feedback"></p>
+    </div>
+
+    <script>
+        // JavaScript code for handling form submissions and interacting with your backend
+        document.getElementById("addProductForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Add product logic here
+            // Example: Send an HTTP request to your backend to add the product
+            // Update the feedback element with success or error messages
+        });
+
+        document.getElementById("sellProductForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Sell product logic here
+            // Example: Send an HTTP request to your backend to sell the product
+            // Update the feedback element with success or error messages
+        });
+
+        document.getElementById("reorderProductForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Reorder product logic here
+            // Example: Send an HTTP request to your backend to reorder the product
+            // Update the feedback element with success or error messages
+        });
+
+        document.getElementById("checkAvailabilityForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Check product availability logic here
+            // Example: Send an HTTP request to your backend to check availability
+            // Update the feedback element with availability status
+        });
+    </script>
+</body>
+</html>
