@@ -1,3 +1,4 @@
+-- Active: 1678847600123@@127.0.0.1@3306
 CREATE DATABASE supermarket_inventory;
 USE supermarket_inventory;
 CREATE TABLE products (
